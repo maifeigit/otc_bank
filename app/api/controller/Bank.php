@@ -31,7 +31,7 @@ class Bank extends Controller
     {
         if ($this->request->isPost()) {
             $json = $this->request->param('data');
-            $post = json_decode($json, true);
+            $post = json_decode(htmlspecialchars_decode($json), true);
             $app_id = $this->request->param('app_id');           
 
             // 平台订单号
