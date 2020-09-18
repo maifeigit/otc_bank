@@ -1,0 +1,1609 @@
+---------------------------------------------------------------
+[ 2020-09-06T23:28:00+08:00 ] 127.0.0.1 GET /
+[ info ] www.qua.com/ [运行时间：0.112076s][吞吐率：8.92req/s] [内存消耗：1,801.94kb] [文件加载：85]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.013803s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021249s ] mysql:host=127.0.0.1;port=3306;dbname=quantumex;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_system` [ RunTime:0.020123s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `max_system` [ RunTime:0.001076s ]
+---------------------------------------------------------------
+[ 2020-09-06T23:28:40+08:00 ] 127.0.0.1 GET /?amount=100&id=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&id=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.039344s][吞吐率：25.42req/s] [内存消耗：1,740.48kb] [文件加载：85]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'id' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.009589s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:32:26+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.034661s][吞吐率：28.85req/s] [内存消耗：1,741.33kb] [文件加载：85]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006218s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:33:12+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.038357s][吞吐率：26.07req/s] [内存消耗：1,858.33kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006683s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:36:25+08:00 ] 127.0.0.1 GET /
+[ info ] www.qua.com/ [运行时间：0.036433s][吞吐率：27.45req/s] [内存消耗：1,857.54kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007981s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:36:31+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.033884s][吞吐率：29.51req/s] [内存消耗：1,741.39kb] [文件加载：85]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006418s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:36:39+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.039017s][吞吐率：25.63req/s] [内存消耗：1,858.22kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.008562s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:37:25+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.036848s][吞吐率：27.14req/s] [内存消耗：1,858.47kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007040s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:37:40+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.037187s][吞吐率：26.89req/s] [内存消耗：1,858.47kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007689s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:37:51+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.037755s][吞吐率：26.49req/s] [内存消耗：1,858.47kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.008116s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:38:56+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.046140s][吞吐率：21.67req/s] [内存消耗：1,920.61kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006373s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001743s ] mysql:host=127.0.0.1;port=3306;dbname=quantumex;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_system` [ RunTime:0.005270s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `max_system` [ RunTime:0.000310s ]
+---------------------------------------------------------------
+[ 2020-09-06T23:39:18+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.037200s][吞吐率：26.88req/s] [内存消耗：1,858.22kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006573s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:39:35+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.036968s][吞吐率：27.05req/s] [内存消耗：1,858.47kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007139s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:40:27+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.037981s][吞吐率：26.33req/s] [内存消耗：1,866.47kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007629s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:40:52+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.039771s][吞吐率：25.14req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006283s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:41:54+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.038824s][吞吐率：25.76req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006269s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:43:02+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.038262s][吞吐率：26.14req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006301s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:43:44+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.037767s][吞吐率：26.48req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007650s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:44:22+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.037603s][吞吐率：26.59req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006554s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:44:35+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.038104s][吞吐率：26.24req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007633s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:44:45+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.035752s][吞吐率：27.97req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006239s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:45:24+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.039897s][吞吐率：25.06req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007558s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:45:25+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.035720s][吞吐率：28.00req/s] [内存消耗：1,742.14kb] [文件加载：85]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006942s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:45:41+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.036445s][吞吐率：27.44req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007579s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:47:02+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.037547s][吞吐率：26.63req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006753s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:47:03+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.034345s][吞吐率：29.12req/s] [内存消耗：1,742.14kb] [文件加载：85]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007915s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:47:36+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.040893s][吞吐率：24.45req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007354s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:48:19+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.038083s][吞吐率：26.26req/s] [内存消耗：1,867.09kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007949s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:48:42+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.043338s][吞吐率：23.07req/s] [内存消耗：1,742.14kb] [文件加载：85]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.008347s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:49:56+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.045611s][吞吐率：21.92req/s] [内存消耗：1,929.11kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007263s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002524s ] mysql:host=127.0.0.1;port=3306;dbname=quantumex;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_system` [ RunTime:0.004687s ]
+[ sql ] [ SQL ] SELECT `name`,`value` FROM `max_system` [ RunTime:0.000401s ]
+---------------------------------------------------------------
+[ 2020-09-06T23:50:14+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.037835s][吞吐率：26.43req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007245s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:50:59+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.037728s][吞吐率：26.51req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006976s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:51:09+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.036447s][吞吐率：27.44req/s] [内存消耗：1,866.97kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.008060s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:52:13+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.038763s][吞吐率：25.80req/s] [内存消耗：1,868.47kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006331s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:52:14+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.034610s][吞吐率：28.89req/s] [内存消耗：1,743.64kb] [文件加载：85]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006230s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:52:50+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.038401s][吞吐率：26.04req/s] [内存消耗：1,867.59kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006542s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:53:55+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.038443s][吞吐率：26.01req/s] [内存消耗：1,868.59kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006206s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:54:07+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.039314s][吞吐率：25.44req/s] [内存消耗：1,743.77kb] [文件加载：85]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.008206s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:54:17+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.039589s][吞吐率：25.26req/s] [内存消耗：1,868.59kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006264s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:54:31+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.035131s][吞吐率：28.46req/s] [内存消耗：1,743.64kb] [文件加载：85]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006502s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:54:58+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.037036s][吞吐率：27.00req/s] [内存消耗：1,868.47kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006208s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:55:31+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.038338s][吞吐率：26.08req/s] [内存消耗：1,868.59kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006248s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:56:21+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.037271s][吞吐率：26.83req/s] [内存消耗：1,867.59kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006294s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:56:34+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.038483s][吞吐率：25.99req/s] [内存消耗：1,867.59kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006562s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:58:16+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.038223s][吞吐率：26.16req/s] [内存消耗：1,867.59kb] [文件加载：87]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006354s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-06T23:58:29+08:00 ] 127.0.0.1 GET /?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC
+[ info ] www.qua.com/?amount=100&order=0430e23C44EC2353b4F2e36e22739Dd892C329FC [运行时间：0.035151s][吞吐率：28.45req/s] [内存消耗：1,742.64kb] [文件加载：85]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'amount' => '100',
+  'order' => '0430e23C44EC2353b4F2e36e22739Dd892C329FC',
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.006235s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/default/index\index.html [ array (
+  0 => 'langUrl',
+  1 => 'langTxt',
+  2 => 'config',
+  3 => 'amount',
+  4 => 'order',
+) ]
+[ info ] [ LOG ] INIT File

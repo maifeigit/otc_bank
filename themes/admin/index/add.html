@@ -1,0 +1,57 @@
+{extend name="base" /}
+{block name="body"}
+<div class="layui-body">
+    <!--tab标签-->
+    <div class="layui-tab layui-tab-brief">
+        <ul class="layui-tab-title">
+            <li class=""><a href="{:url('admin/index/index')}">银行卡列表</a></li>
+            <li class="layui-this">添加银行卡</li>
+        </ul>
+        <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <form class="layui-form form-container" action="{:url('admin/index/save')}" method="post">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">银行</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="bank_name" value="" lay-verify="required" placeholder="请输入银行名称" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">卡号</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="bank_card" value="" lay-verify="required" placeholder="请输入银行卡号" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">姓名</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="name" value="" lay-verify="required" placeholder="请输入持卡人姓名" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">额度</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="quota" value="" placeholder="(可选)请输入卡累计交易额度" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">状态</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="status" value="1" title="启用">
+                            <input type="radio" name="status" value="0" title="停用" checked="checked">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="*">提交</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{/block}

@@ -1,0 +1,1535 @@
+[v-cloak] {
+  display: none;
+}
+
+.cred {
+  color: #ea1c1c;
+}
+
+.cursorPt {
+  cursor: pointer;
+}
+
+.c999 {
+  color: #999;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.c666 {
+  color: #666;
+}
+
+.c222 {
+  color: #222;
+}
+
+.cg {
+  color: #15b979;
+}
+
+.mrleft10 {
+  margin-right: 10px;
+}
+
+.redLabel {
+  padding: 0 3px;
+  margin: 0 2px;
+  border: 1px solid red;
+  color: red;
+  font-style: normal;
+  border-radius: 100px;
+}
+
+.cgreen {
+  color: #05b570;
+}
+
+.Tcenter {
+  text-align: center !important;
+}
+
+.fw9 {
+  font-weight: bold;
+}
+
+.w400 {
+  width: 400px;
+}
+
+.fz12 {
+  font-size: 12px !important;
+}
+
+.fz26 {
+  font-size: 26px;
+}
+
+.fz30 {
+  font-size: 30px;
+}
+
+.fz18 {
+  font-size: 18px;
+}
+
+.tCenter {
+  text-align: center;
+}
+
+.flexbetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.floatRight {
+  float: right;
+}
+
+.loadingPage {
+  height: 500px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: #fff;
+}
+
+.loadingPage img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1100;
+  width: 50px;
+}
+
+.goBackBtn {
+  padding: 5px 45px;
+  background: #fff;
+  color: #05b471;
+  border: 1px solid #05b471;
+  border-radius: 100px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#waitForCheck,
+#waitBUYForCheck,
+#payForOrder {
+  /*width: 1200px;*/
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+
+/*弹框样式修改*/
+
+
+/*layer自定义样式*/
+
+.layui-layer-no-cloose .layui-layer-title,
+.layui-layer-oneAndHave-cloose .layui-layer-title {
+  text-align: center;
+  padding: 0px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  background-color: #05b570;
+  color: #fff;
+}
+
+.layui-layer-no-cloose .layui-layer-content span,
+.layui-layer-oneAndHave-cloose .layui-layer-content span {
+  color: #05b570;
+}
+
+.layui-layer-no-cloose .layui-layer-content,
+.layui-layer-oneAndHave-cloose .layui-layer-content {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.layui-layer-no-cloose .layui-layer-btn .layui-layer-btn0,
+.layui-layer-no-cloose .layui-layer-btn .layui-layer-btn1,
+.layui-layer-oneAndHave-cloose .layui-layer-btn .layui-layer-btn0 {
+  border-radius: 100px;
+  background: #05b570;
+  color: #fff;
+  height: 32px;
+  line-height: 32px;
+  width: auto;
+  text-align: center;
+  margin: 20px 10px;
+  border-color: #05b570;
+}
+
+.layui-layer-no-cloose .layui-layer-btn .layui-layer-btn0 {
+  background: #fff;
+  color: #05b570;
+}
+
+.layui-layer-oneAndHave-cloose .layui-layer-content {
+  padding: 0 15px;
+}
+
+.layui-layer {
+  margin: 10px;
+}
+
+body .layui-layer.bgHui-class {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: #fff !important;
+}
+
+body .layui-layer.bgHui-class .layui-layer-content {
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.layui-layer-oneAndHave-cloose .layui-layer-content table {
+  font-size: 12px;
+}
+
+.layui-layer-oneAndHave-cloose .layui-layer-btn {
+  text-align: center;
+}
+
+.icon-class.layui-layer-dialog .layui-layer-padding {
+  text-align: center;
+  padding: 20px;
+}
+
+.icon-class.layui-layer-dialog .layui-layer-content .layui-layer-ico {
+  position: static;
+  margin-right: 15px;
+}
+
+
+/*公共头部底部*/
+
+header {
+  padding: 10px 0 10px 10px;
+  margin: 0 auto 20px;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+header .slogan {
+  position: relative;
+  top: -15px;
+  color: #767676;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* header {
+    height: 48px;
+  } */
+  header img {
+    width: 160px;
+  }
+  header {
+    padding: 10px;
+  }
+  header span {
+    font-size: 12px;
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-wrapper {
+  clear: both;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/*过渡页面*/
+
+html,
+body {
+  height: 100%;
+  min-width: 300px;
+  font-family: Arial;
+}
+
+
+/*存币流程*/
+
+#coinRemind p {
+  color: #333;
+  line-height: 30px;
+}
+
+#coinRemind .confirm {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#coinRemind .confirm button {
+  display: block;
+  margin: 10px auto;
+}
+
+#coinRemind .showUp {
+  display: block;
+}
+
+#coinRemind .pwd-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  height: 36px;
+  cursor: pointer;
+}
+
+#coinRemind .pwd-wrap li {
+  margin-right: 10px;
+  flex: 1;
+  line-height: 36px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+#coinRemind .pwd-wrap li:last-child {
+  margin-right: 0;
+}
+
+#coinRemind .pwd-wrap li input {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+#coinRemind .boxfocus {
+  box-shadow: 1px 0px 13px 0px #05b471;
+}
+
+.bntBdGreen {
+  border: 1px solid #05b471;
+  color: #05b471;
+  text-align: center;
+  width: 160px;
+  padding: 8px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.bntBgGreen {
+  color: #fff;
+  border: none;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  background: #05b471;
+}
+
+.bntBordenone {
+  background: transparent;
+  border: none;
+  color: #05b471;
+}
+
+#coinRemind .confirm p {
+  color: #767676;
+}
+
+.qrcodePopShow {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(107, 107, 107, 0.9);
+}
+
+.qrcodePopShow .main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px;
+  width: 280px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.qrcodePopShow .main .btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+.qrcodePopShow .main .btn-close img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.qrcodePopShow .main button {
+  width: 100%;
+}
+
+
+#recharge .rechargeMain {
+  padding-right: 30px;
+}
+
+#recharge .creatPayOrder {
+  padding-left: 30px;
+}
+
+#recharge .rechargeMain,
+#recharge .creatPayOrder {
+  margin: auto;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+#recharge .creatPayOrder {
+  width: 40%;
+  border-right: 0;
+  margin-top: 50px;
+}
+
+#recharge .creatPayOrder p {
+  color: #999;
+  line-height: 60px;
+}
+
+#recharge .creatPayOrder p span {
+  border: 1px solid red;
+  color: red;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+#recharge p {
+  line-height: 40px;
+  font-size: 14px;
+}
+
+#recharge .rechargeMassage {
+  border-bottom: 1px solid rgb(121, 121, 121);
+  color: #333;
+  padding: 20px;
+}
+
+#recharge .rechargeAddress {
+  text-align: center;
+  color: #333;
+  padding: 20px 0 20px 20px;
+}
+
+#recharge .rechargeAddress p {
+  text-align: left;
+  font-size: 14px;
+}
+
+#recharge .rechargeAddress img {
+  margin: 10px 0;
+  width: 150px;
+}
+
+#recharge .rechargeAddress button {
+  display: block;
+  margin: 10px auto;
+  font-size: 14px;
+}
+
+#recharge div .fz20,
+#rechargeWait div .fz20 {
+  font-size: 20px;
+}
+
+#recharge div .fc76,
+#rechargeWait .fc76 {
+  color: #999;
+}
+
+#recharge div .fc76,
+#rechargeWait .fc76 {
+  color: #767676;
+}
+
+#recharge div .fc66 {
+  color: #666;
+}
+
+#recharge div .fc60,
+#rechargeWait .fc60 {
+  color: #FF6600;
+}
+
+#recharge div .fz_weight,
+#rechargeWait div .fz_weight,
+#coinRemind p span.fz_weight {
+  font-weight: 600;
+}
+
+#rechargeWait .qrcodePopShow .main {
+  min-width: 280px;
+  position: absolute;
+  top: 50%;
+  padding: 0 20px;
+  background: #fff;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#rechargeWait .qrcodePopShow p {
+  line-height: 25px;
+  max-width: 500px;
+}
+
+#rechargeWait .qrcodePopShow p.fc66 {
+  color: #666;
+}
+
+#rechargeWait .qrcodePopShow p.fc60 {
+  color: #FF6600;
+}
+
+#rechargeWait .qrcodePopShow p.fz16 {
+  font-size: 16px;
+}
+
+#rechargeWait .qrcodePopShow p.mart20 {
+  margin-top: 20px;
+}
+
+#rechargeWait .qrcodePopShow p button {
+  width: 80px;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+#rechargeWait .remind {
+  background: rgba(242, 242, 242, 1);
+  padding: 15px 70px;
+  line-height: 20px;
+  margin: 40px 0 50px 0;
+}
+
+#rechargeWait .remind .mgT10 {
+  margin-top: 10px;
+}
+
+#rechargeWait .remind li {
+  list-style: disc;
+}
+
+#rechargeWait>p {
+  text-align: center;
+}
+
+#rechargeWait>p button {
+  margin: 0 20px;
+}
+
+#rechargeWait .massage {
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+#rechargeWait .massage img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+#rechargeWait .massage p {
+  line-height: 30px;
+  white-space: nowrap;
+}
+
+#rechargeWait .massage p:nth-of-type(1) {
+  line-height: 60px;
+}
+
+
+/*购买USDT/出售USDT页面*/
+
+.buyUsdt span {
+  margin-left: 10px;
+}
+
+.el-form-item__content {
+  width: 220px;
+}
+
+.orderList {
+  width: 96%;
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+
+.el-table--fit {
+  border: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+.el-table .cell,
+.el-table th div,
+.el-table--border td:first-child .cell,
+.el-table--border th:first-child .cell {
+  padding-left: 0;
+  padding-right: 0px;
+}
+
+.el-tabs--card>.el-tabs__header .el-tabs__nav {
+  border: none;
+}
+
+.el-tabs--card>.el-tabs__header .el-tabs__item.is-active {
+  border-bottom-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  border-radius: 3px 3px 0 0;
+  top: 1px;
+}
+
+.el-table--enable-row-transition .el-table__body td {
+  text-align: center;
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+  background: #def0e9;
+  text-align: center;
+}
+
+.el-table th {
+  background: #f7f7f7;
+  text-align: center;
+  padding: 5px;
+}
+
+.el-tabs__item:hover,
+.el-tabs__item.is-active {
+  color: #222;
+}
+
+.el-tabs--card>.el-tabs__header .el-tabs__item {
+  border-left: 0;
+}
+
+.orderList>p {
+  margin-top: 50px;
+}
+
+.orderListMain {
+  padding: 0 40px;
+}
+
+.orderListMain .el-row {
+  border-bottom: 1px solid #eee;
+}
+
+.orderListMain .el-row p {
+  margin: 10px 0;
+}
+
+.orderListMain .el-col {
+  padding: 0;
+}
+
+.orderListMain .el-row p span {
+  margin: 0 10px;
+}
+
+.el-tab-pane,
+.el-tabs__nav-scroll {
+  padding: 0 40px;
+}
+
+.buyUsdt {
+  padding: 27px 39px;
+  background-color: #f7f7f7;
+}
+
+.totalMoney {
+  margin-bottom: 28px;
+}
+
+.el-dialog {
+  width: 400px;
+  height: 230px;
+}
+
+.el-dialog .el-input,
+.el-dialog .el-input__inner {
+  width: 35px;
+  float: left;
+  text-align: center;
+  padding: 0;
+  margin: 10px;
+  height: 35px;
+}
+
+.el-button--primary {
+  background-color: #05b570;
+  border-color: #05b570;
+  padding: 12px 61px;
+  border-radius: 100px;
+}
+
+.el-button--primary:hover,
+.el-button--primary:focus,
+.el-button--primary:active {
+  background-color: #56cca2;
+  border-color: #56cca2;
+}
+
+.el-form-item .el-form-item__label {
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: 8px;
+  color: #222;
+}
+
+
+/*付款成功页面*/
+
+#waitForCheck>div,
+#waitBUYForCheck>div {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.waitBUYForCheckTop>div,
+.waitForCheckTop>div {
+  text-align: center;
+  margin-top: 33px;
+  margin-bottom: 25px;
+}
+
+.waitBUYForCheckTop .tCenter {
+  text-align: center;
+}
+
+.waitBUYForCheckTop>div>p,
+.waitForCheckTop>div>p {
+  line-height: 28px;
+}
+
+.waitBUYForCheckTop a,
+.waitForCheckTop a {
+  color: #05b570;
+}
+
+.waitBUYmassage,
+.waitForCheckmassage {
+  max-width: 980px;
+  background: #f7f7f7;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.waitBUYmassage>p,
+.waitForCheckmassage>p {
+  width: 280px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 34px;
+}
+
+.waitBUYForCheckTop>div>p,
+.waitForCheckTop>div>p {
+  line-height: 28px;
+  color: #222;
+  font-size: 16px;
+  white-space: nowrap;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: left;
+}
+
+.waitBUYmassage>p>span,
+.waitForCheckmassage>p>span {
+  text-align: left;
+}
+
+.goTozhifubao {
+  background: #04b86f;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #fff;
+  height: 20px;
+  white-space: nowrap;
+  padding: 1px 5px;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.waitBUYmassage>p>span:nth-of-type(1),
+.waitForCheckmassage>p>span:nth-of-type(1) {
+  width: 75px;
+  display: inline-block;
+}
+
+.waitBUYForCheckTop .waitForCheckDescribe,
+.waitForCheckTop .waitForCheckDescribe {
+  margin: 20px auto;
+  text-align: center;
+}
+
+#error {
+  position: fixed;
+  top: 30%;
+  max-width: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#error img,
+.waitBUYForCheckTop img,
+.waitForCheckTop img {
+  vertical-align: middle;
+}
+
+#error .fz30,
+.waitBUYForCheckTop .fz30,
+.waitForCheckTop .fz30 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/*正在购买页面*/
+
+.payForOrderTop,
+.payForOrderPayWay {
+  background: #f7f7f7;
+  font-size: 16px;
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.payForOrderBottom,
+.payForOrderTopNav {
+  max-width: 980px;
+  margin: 0 auto;
+  color: #383838;
+  line-height: 35px;
+  font-size: 16px;
+}
+
+.payForOrderBottom li {
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.payForOrderTopNav {
+  border-bottom: 1px solid #ddd;
+}
+
+.payForOrderTopNav>p {
+  display: inline;
+  padding: 10px;
+  position: relative;
+  top: -1px;
+  background: #fff;
+  z-index: 1;
+  margin-left: 30px;
+  border: 1px solid #ddd;
+  border-radius: 3px 3px 0 0;
+  border-bottom: 1px solid #fff;
+}
+
+.payForOrderTop>.title,
+.payForOrderPayWay>.title {
+  padding: 0 30px;
+  height: 56px;
+  line-height: 56px;
+  border-bottom: 1px solid #ddd;
+}
+
+.payForOrderTop>.main {
+  padding: 15px 30px;
+}
+
+.payForOrderTop>.main>p {
+  line-height: 33px;
+}
+
+.payForOrderTop>.main>p>span:nth-of-type(1) {
+  width: 70px;
+  display: inline-block;
+}
+
+.payForOrderPayWay {
+  padding-bottom: 1px;
+}
+
+.payForOrderZhifuErweima img {
+  width: 60px;
+}
+
+.payForOrderPayWay>.main input[type=text] {
+  height: 20px;
+  text-overflow: ellipsis;
+}
+
+.payForOrderPayWay>.main input[type=text],
+.payForOrderPayWay>.main textarea {
+  border: none;
+  background: none;
+  min-width: 10px;
+  width: 100%;
+  flex: 1;
+  resize: none;
+  outline: none;
+}
+
+.payForOrderPayWay>.main #name {
+  width: 55px;
+}
+
+.payForOrderPayWay>.main ul li.payForOrderZhifuErweima {
+  height: 120px;
+  align-items: center;
+}
+
+.payForOrderPayWay>.main ul li.payForOrderZhifuErweima a {
+  color: #05b471;
+}
+
+.payForOrderPayWay>.main ul li.payForOrderZhifuErweima>div p {
+  font-size: 14px;
+}
+
+.payForOrderPayWay>.title>button {
+  height: 30px;
+  line-height: 30px;
+  background: #fff;
+  margin-left: 5px;
+  font-size: 14px;
+  display: inline-block;
+  width: 60px;
+  border: none;
+  color: gray;
+}
+
+.payForOrderPayWay>.title>button.active {
+  border: 1px solid #05b471;
+  color: #05b471;
+}
+
+.payForOrderPayWay>.title>button.disabledButton {
+  color: #eee;
+  cursor: not-allowed;
+}
+
+.payForOrderPayWay>.main {
+  max-width: 450px;
+  padding: 0 20px;
+  margin: 31px auto;
+}
+
+.payForOrderPayWay>.main ul li {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.payForOrderPayWay>.main ul li .gLabel {
+  border: 1px solid #15b979;
+  border-radius: 100px;
+  padding: 3px 10px;
+  height: 17px;
+  margin-left: 10px;
+  font-size: 12px;
+  color: #15b979;
+}
+
+.goTozhifubao:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.payForOrderPayWay>.main ul li button {
+  background-color: inherit;
+  border: none;
+  height: 100%;
+  color: #15b979;
+}
+
+.payForOrderPayWay>.main ul li>span:nth-of-type(1) {
+  width: 90px;
+}
+
+.payForOrderPayWay>.main ul li>div {
+  text-align: left;
+  flex: 1;
+  display: flex;
+}
+
+.payForOrderPayWay>.main ul li.payForOrderZhifuErweima div {
+  display: block;
+}
+
+#payForOrder .Tcenter button[disabled],
+html input[disabled] {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+#payForOrder .Tcenter button[disabled]:hover {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+#payForOrder button.floatButton[disabled],
+html input[disabled] {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+#payForOrder button.floatButton[disabled]:hover {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+#payForOrder .Tcenter {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+#payForOrder .payForOrderPayWay {
+  position: relative;
+}
+
+#payForOrder .fristTransaction {
+  position: absolute;
+  top: 56px;
+  height: 380px;
+  display: none;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#payForOrder .fristTransaction>div {
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  color: #fff;
+}
+
+#payForOrder .fristTransaction .read {
+  position: relative;
+  top: 2px;
+  padding: 0 5px 0 10px;
+}
+
+#payForOrder .fristTransaction .layui-layer layui-layer-tips {
+  margin-right: 50px;
+}
+
+#payForOrder .fristTransaction p {
+  margin: 50px;
+}
+
+#payForOrder .fristTransaction p:nth-of-type(1) {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#payForOrder .fristTransaction p a {
+  color: #B1B1B1;
+  text-decoration: underline;
+}
+
+#payForOrder .fristTransaction button {
+  background: #FFFFFF;
+  color: #000;
+  height: 40px;
+  width: 200px;
+  font-size: 14px;
+  line-height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+
+#payForOrder .Tcenter button {
+  padding: 15px 90px;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  background: #05b570;
+}
+
+.payForOrderPayWay>.main ul li.altTitle {
+  font-size: 14px;
+  text-align: center;
+  height: 10px;
+  color: gray;
+  position: relative;
+  top: -23px;
+}
+
+.payForOrderPayWay>.main ul li.altTitle p {
+  margin: 0 auto;
+}
+
+#payForOrder .Tcenter button:hover,
+#payForOrder .Tcenter button:hover {
+  background: #82dab7;
+}
+
+#payForOrder #alipayCardnNub {
+  z-index: 0;
+}
+
+#payForOrder div.Tcenter a {
+  vertical-align: bottom;
+  font-size: 16px;
+}
+
+body .layui-layer-molv .layui-layer-title {
+  background: #05b570;
+  padding: 0;
+  text-align: center;
+}
+
+.layui-layer-molv .layui-layer-btn {
+  text-align: center;
+}
+
+.advertisementPopShow {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100000000000;
+  background: rgba(107, 107, 107, 0.9);
+}
+
+.advertisementPopShow .layui-layer-advertisement {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+  position: absolute;
+  background: #fff;
+  top: 250px;
+  left: 50%;
+  margin-left: -150px;
+}
+
+.advertisementPopShow .layui-layer-advertisement img {
+  width: 300px;
+}
+
+.advertisementPopShow .layui-layer-advertisement .lables {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 100px;
+  background: #fff;
+  font-size: 12px;
+  color: #999;
+  background: rgba(81, 81, 81, 0.7);
+  padding: 2px 8px;
+}
+
+.advertisementPopShow .layui-layer-advertisement .layui-layer-btn {
+  padding: 0;
+}
+
+.advertisementPopShow .layui-layer-advertisement .layui-layer-btn a {
+  background: #00B56F;
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  border: none;
+  color: #fff;
+}
+
+body .layui-layer-molv .layui-layer-btn a {
+  background: #fff;
+  padding: 2px 25px;
+  color: #05b570;
+  border: 1px solid #05b570;
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .orderList .c999 {
+    padding: 0 20px;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #383838;
+    border-top: 1px solid #ddd;
+  }
+  .navigation,
+  .payForOrderTopNav {
+    display: none;
+  }
+  #payForOrder .fristTransaction {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  #payForOrder .fristTransaction>div {
+    background: #fff;
+    max-width: 300px;
+    padding: 15px;
+    height: 180px;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -150px;
+    box-sizing: border-box;
+    color: #383838;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  #payForOrder .fristTransaction>div p {
+    margin: 10px 0;
+  }
+  #payForOrder .fristTransaction>div p:nth-of-type(1) {
+    font-size: 16px;
+  }
+  #payForOrder .fristTransaction>div p:nth-of-type(2) {
+    font-size: 12px;
+    margin-left: -10px;
+  }
+  #payForOrder .fristTransaction .read {
+    top: 3px;
+  }
+  #payForOrder .fristTransaction>div button {
+    background: #05b471;
+    color: #fff;
+    margin: 0 auto;
+    display: block;
+  }
+  #payForOrder .payForOrderTop .cRed {
+    font-size: 13px;
+  }
+  #payForOrder .payForOrderTop>.title,
+  .payForOrderPayWay>.title {
+    padding: 0;
+    padding-left: 20px;
+    height: 50px;
+    line-height: 50px;
+  }
+  #payForOrder .payForOrderTop>.main {
+    padding: 15px 20px;
+  }
+  #payForOrder .payForOrderTop .c999 {
+    color: #000;
+  }
+  #payForOrder .payForOrderTop .warp {
+    display: block;
+  }
+  #payForOrder .payForOrderPayWay>.main ul li .gLabel {
+    padding: 0px 2px;
+  }
+  #payForOrder #payForOrder .Tcenter {
+    font-size: 14px;
+  }
+  #payForOrder .Tcenter button {
+    border-radius: 5px;
+    padding: 10px 70px;
+  }
+  #payForOrder .payForOrderBottom {
+    font-size: 12px;
+  }
+  #payForOrder .floatButton {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    background: #05b570;
+  }
+  /*存币*/
+  #recharge p .phoneBlock,
+  #coinRemind .phoneBlock {
+    display: block;
+  }
+  #recharge .rechargeMain,
+  #recharge .creatPayOrder {
+    width: 100%;
+    float: none;
+    padding: 0 15px;
+    margin-top: 0;
+  }
+  #recharge .creatPayOrder .creatPayOrderMain {
+    border-top: 1px solid rgb(121, 121, 121);
+  }
+  #recharge .creatPayOrder .creatPayOrderMain p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #payForOrder .payForOrderTop,
+  .payForOrderPayWay {
+    font-size: 13px
+  }
+  .payForOrderPayWay>.main input[type=text] {
+    height: 16px;
+  }
+  #payForOrder .payForOrderPayWay .bfz12 {
+    font-size: 12px;
+  }
+  #payForOrder .payForOrderPayWay>.main ul li>span:nth-of-type(1),
+  .payForOrderTop>.main>p>span:nth-of-type(1) {
+    width: 60px;
+  }
+  #payForOrder .payForOrderBottom,
+  .payForOrderTopNav {
+    font-size: 14px;
+  }
+  #payForOrder .payForOrderTopNav>p {
+    top: 0px;
+    margin-left: 20px;
+  }
+  .waitBUYmassage>p,
+  .waitForCheckmassage>p {
+    font-size: 14px;
+  }
+  #payForOrder .payForOrderTop>.title,
+  #payForOrder .payForOrderPayWay>.title {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+  }
+  #payForOrder .payForOrderTop>.main {
+    padding: 20px;
+  }
+  #payForOrder .payForOrderPayWay>.main ul li .gLabel {
+    margin-left: 1px;
+  }
+  #payForOrder div.Tcenter a {
+    vertical-align: bottom;
+    font-size: 15px;
+  }
+  #payForOrder .Tcenter button {
+    padding: 10px 50px;
+    font-size: 15px;
+  }
+  .waitBUYForCheckTop>div>p,
+  .waitForCheckTop>div>p {
+    font-size: 12px;
+  }
+  .waitForCheckTop>div>p {
+    text-align: center;
+  }
+  /*存币*/
+  #recharge p {
+    font-size: 12px;
+    line-height: 30px;
+  }
+  #recharge>div {
+    padding: 30px 15px;
+  }
+  #recharge .rechargeAddress p {
+    font-size: 12px;
+  }
+  #recharge .rechargeAddress img {
+    width: 120px;
+  }
+  #coinRemind p {
+    width: 230px;
+    margin: 0 auto;
+  }
+  #rechargeWait .massage p {
+    line-height: 30px;
+  }
+  #rechargeWait .remind {
+    padding: 15px 15px 15px 30px;
+    line-height: 16px;
+    margin: 10px 0 30px 0;
+  }
+}
+
+/* 语言切换 */
+.switch-lang {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.switch-lang .btn {
+  position: relative;
+  display: block;
+  padding: 6px 20px 6px 6px;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+}
+
+.switch-lang .btn::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 4px;
+  width: 0;
+  height: 0;
+  border-top: solid 4px #666;
+  border-left: solid 4px transparent;
+  border-right: solid 4px transparent;
+  transform: rotate(0);
+  transition: all 0.2s;
+}
+
+.switch-lang .btn.active::before {
+  transform: rotate(180deg);
+}
+
+.switch-lang .lang-list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin: 5px 0 0;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.switch-lang .lang-list li {
+  padding: 0 20px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.fz_weight {
+  margin-top: 10px;
+}
+.fz16 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.main-wrapper {
+  max-width: 450px;
+  margin-top: 100px;
+  padding: 20px 50px;
+}
+
+.label-txt {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.ivu-input {
+    display: inline-block;
+    width: 416px;
+    height: 48px;
+    line-height: 1.5;
+    padding: 4px 7px;
+    padding-left: 20px;
+    font-size: 16px;
+    border: 1px solid #dcdee2;
+    border-radius: 4px;
+    color: #515a6e;
+    background-color: #fff;
+    background-image: none;
+    position: relative;
+    cursor: text;
+    transition: border .2s ease-in-out,background .2s ease-in-out,box-shadow .2s ease-in-out;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.otc-btn-sytle .btn {
+    border-radius: 2px;
+    outline: none;
+    background: linear-gradient(90deg,#5fb878,#05b471) #15b979;
+    color: #fff;
+    border: none;
+    position: relative;
+    min-width: 70px;
+}
+
+.otc-btn-sytle .bigger {
+    height: 48px;
+    font-size: 16px;
+    line-height: 48px;
+}
+
+.cursor {
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+header .slogan {
+    position: relative;
+    top: 0px;
+    color: #767676;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 598px) {
+  .ivu-input {
+    width: 250px;
+  }
+  .main-wrapper{
+    margin-top: 80px;
+  }
+}
