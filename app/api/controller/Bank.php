@@ -30,7 +30,10 @@ class Bank extends Controller
     public function apply()
     {
         if ($this->request->isPost()) {
-            $post = $this->request->param('data');
+            $json = $this->request->param('data');
+            $post = json_decode($json, true);
+            $app_id = $this->request->param('app_id');           
+
             // 平台订单号
             $platform_sn = date('YmdHis').mt_rand(10000,99999);
             // 获取一张可用银行卡
