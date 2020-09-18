@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2020-09-18 11:52:06
+Date: 2020-09-18 12:27:12
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -152,15 +152,14 @@ INSERT INTO `max_bank_card` VALUES ('12', '招商银行', '6222152122', null, '�
 DROP TABLE IF EXISTS `max_deposit`;
 CREATE TABLE `max_deposit` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID',
-  `wallet` varchar(256) NOT NULL DEFAULT '' COMMENT '收款钱包地址',
-  `symbol` varchar(10) NOT NULL DEFAULT 'USDT' COMMENT '交易币种',
-  `name` varchar(10) NOT NULL COMMENT '用户姓名',
-  `account` int(8) DEFAULT NULL COMMENT 'mt4交易账号',
-  `address` varchar(256) DEFAULT NULL COMMENT '用户钱包地址',
-  `image` varchar(256) DEFAULT NULL COMMENT '转账截图',
-  `amount` decimal(15,4) DEFAULT '0.0000' COMMENT '转账金额',
-  `transaction_id` varchar(64) DEFAULT NULL COMMENT '交易单号',
+  `uid` int(10) NOT NULL COMMENT '用户ID',
+  `username` varchar(30) NOT NULL COMMENT '用户名',
+  `amount` decimal(15,4) DEFAULT '0.0000' COMMENT '交易金额',
+  `sn` varchar(64) NOT NULL COMMENT '第三方单号',
+  `platform_sn` varchar(64) DEFAULT NULL COMMENT '平台订单号',
+  `app_id` int(2) DEFAULT NULL COMMENT '应用ID',
   `create_time` int(10) DEFAULT NULL COMMENT '提交时间',
+  `pic` varchar(256) DEFAULT NULL COMMENT '转账截图',
   `status` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COMMENT='入金信息表';
@@ -168,17 +167,6 @@ CREATE TABLE `max_deposit` (
 -- ----------------------------
 -- Records of max_deposit
 -- ----------------------------
-INSERT INTO `max_deposit` VALUES ('1', '', 'USDT', 'ttt3fbar', '0', '23erre3rr4', '', '100.0000', '0430e23C44EC2353b4F2e36e22739Dd892C329FC', '1599410518', '0');
-INSERT INTO `max_deposit` VALUES ('2', '', 'USDT', 'ttt3fbar', '0', '23erre3rr4', '/public/uploads/20200907/545f160d5f8cf367e33a6dde49151000.jpg', '100.0000', '0430e23C44EC2353b4F2e36e22739Dd892C329FC', '1599411054', '0');
-INSERT INTO `max_deposit` VALUES ('3', '', 'USDT', 'ttt3fbar', '0', '23erre3rr4', '/public/uploads/20200907/545f160d5f8cf367e33a6dde49151000.jpg', '100.0000', '0430e23C44EC2353b4F2e36e22739Dd892C329FC', '1599411096', '0');
-INSERT INTO `max_deposit` VALUES ('4', '', 'USDT', '啊啊啊', '0', '23erre3rr4', '/public/uploads/20200907/d3be947e038e04de2b3998dc2905053a.jpg', '100.0000', '0430e23C44EC2353b4F2e36e22739Dd892C329FC', '1599411118', '0');
-INSERT INTO `max_deposit` VALUES ('5', '', 'USDT', '啊啊啊', '0', '23erre3rr4', '/public/uploads/20200907/d3be947e038e04de2b3998dc2905053a.jpg', '100.0000', '0430e23C44EC2353b4F2e36e22739Dd892C329FC', '1599411141', '0');
-INSERT INTO `max_deposit` VALUES ('6', '', 'USDT', 'amanigg@pr', '0', '23erre3rr4', '/public/uploads/20200907/d7ef9bbbc3f9ae88ac2517662caf5f22.jpg', '100.0000', '0430e23C44EC2353b4F2e36e22739Dd892C329FC', '1599411492', '0');
-INSERT INTO `max_deposit` VALUES ('7', '', 'USDT', 'amanigg@pr', '0', '23erre3rr4', '/public/uploads/20200907/d7ef9bbbc3f9ae88ac2517662caf5f22.jpg', '100.0000', '0430e23C44EC2353b4F2e36e22739Dd892C329FC', '1599411512', '0');
-INSERT INTO `max_deposit` VALUES ('8', '', 'USDT', 'amanigg@pr', '0', '23erre3rr4', '/public/uploads/20200907/d7ef9bbbc3f9ae88ac2517662caf5f22.jpg', '100.0000', '0430e23C44EC2353b4F2e36e22739Dd892C329FC', '1599411536', '0');
-INSERT INTO `max_deposit` VALUES ('9', '', 'USDT', '2323', '233232', '2222', '/public/uploads/20200907/44fa32c86f8aa5948a58d700a2b1bf63.png', '100.0000', '0430e23C44EC2353b4F2e36e22739Dd892C329FC', '1599447971', '0');
-INSERT INTO `max_deposit` VALUES ('10', '3333333333', 'USDT', '121212', '121212122', 'x12345-09876543234567890-098765s', '/public/uploads/20200907/704b4ea9ec86b37885b918a1ea0b8206.png', '1111111111.0000', '22222222222', '1599448503', '0');
-INSERT INTO `max_deposit` VALUES ('11', '3333333333', 'USDT', '121212', '121212122', 'x12345-09876543234567890-098765s', '/public/uploads/20200907/704b4ea9ec86b37885b918a1ea0b8206.png', '1111111111.0000', '22222222222', '1599448535', '0');
 
 -- ----------------------------
 -- Table structure for `max_system`
