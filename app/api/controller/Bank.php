@@ -1,6 +1,7 @@
 <?php
 namespace app\api\controller;
 
+use think\Controller;
 use Config;
 use think\Db;
 use Session;
@@ -10,7 +11,7 @@ use Log;
 /**
  * 收藏管理
  */
-class Bank extends Base
+class Bank extends Controller
 {
 
     protected function initialize()
@@ -32,8 +33,6 @@ class Bank extends Base
             $post = $this->request->param();
             // 平台订单号
             $platform_sn = date('YmdHis').mt_rand(10000,99999);
-            
-
 
             // 获取一张可用银行卡
             $bank = Db::name('bank_card')->where(['status'=>1])->find();
@@ -72,7 +71,7 @@ class Bank extends Base
                         'status' => 404,
                         'msg'    => '订单数据保存失败',
                         'data'   => ''
-                    ;
+                    ];
                     echo json_encode($result); exit;
                 }
             }else{
@@ -80,7 +79,7 @@ class Bank extends Base
                     'status' => 404,
                     'msg'    => '暂无可用银行卡',
                     'data'   => ''
-                ;
+                ];
                 echo json_encode($result); exit;
             }
         }
@@ -101,14 +100,14 @@ class Bank extends Base
                         'status' => 200,
                         'msg'    => '已更新图片链接',
                         'data'   => ''
-                    ;
+                    ];
                     echo json_encode($result); exit;
                 } else {
                     $result = [
                         'status' => 404,
                         'msg'    => '图片链接更新失败',
                         'data'   => ''
-                    ;
+                    ];
                     echo json_encode($result); exit;
                 }
             }else{

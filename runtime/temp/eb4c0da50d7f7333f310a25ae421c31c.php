@@ -1,4 +1,4 @@
-<?php /*a:2:{s:33:"./themes/admin/deposit\index.html";i:1600398764;s:24:"./themes/admin/base.html";i:1599447919;}*/ ?>
+<?php /*a:2:{s:33:"./themes/admin/deposit\index.html";i:1600430558;s:24:"./themes/admin/base.html";i:1599447919;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -62,7 +62,8 @@
     <!--tab标签-->
     <div class="layui-tab layui-tab-brief">
         <ul class="layui-tab-title">
-            <li class="layui-this">入金银行卡管理</li>
+            <li class=""><a href="<?php echo url('admin/index/index'); ?>">返回</a></li>
+            <li class="layui-this">入金记录 - [<?php echo htmlentities($bank['bank_name']); ?>] - <?php echo htmlentities($bank['bank_card']); ?></li>
         </ul>
         <div class="layui-tab-content">
 
@@ -71,24 +72,32 @@
                     <thead>
                     <tr>
                         <th>ID</th>
-                        <th>银行</th>
-                        <th>卡号</th>
-                        <th>姓名</th>
-                        <th>限额</th>
+                        <th>用户ID</th>
+                        <th>金额</th>
+                        <th>第三方单号</th>
+                        <th>平台单号</th>
+                        <th>提交时间</th>
+                        <th>转账截图</th>
                         <th>状态</th>
-                        <th>交易明细</th>
+                        <th>操作</th>
                     </tr>
                     </thead>
                     <tbody>
                     <?php if(is_array($dataList) || $dataList instanceof \think\Collection || $dataList instanceof \think\Paginator): if( count($dataList)==0 ) : echo "" ;else: foreach($dataList as $key=>$vo): ?>
                     <tr>
-                        <td><?php echo htmlentities($vo['id']); ?></td>
-                        <td><?php echo htmlentities($vo['bank_name']); ?></td>
-                        <td><?php echo htmlentities($vo['bank_card']); ?></td>
-                        <td><?php echo htmlentities($vo['name']); ?></td>
-                        <td><?php echo htmlentities($vo['quota']); ?></td>
-                        <td><?php echo $vo['status']==1 ? '启用' : '停用'; ?></td>
-                        <td><a href="/admin.php/deposit">查看</a></td>
+                        <td><?php echo htmlentities($key+1); ?></td>
+                        <td><?php echo htmlentities($vo['uid']); ?></td>
+                        <td><?php echo htmlentities($vo['amount']); ?></td>
+                        <td><?php echo htmlentities($vo['sn']); ?></td>
+                        <td><?php echo htmlentities($vo['platform_sn']); ?></td>
+                        <td><?php echo htmlentities(date("Y-m-d H:i:s",!is_numeric($vo['create_time'])? strtotime($vo['create_time']) : $vo['create_time'])); ?></td>
+                        <td><img src="<?php echo htmlentities($vo['pic']); ?>" style="cursor:pointer;" onclick="zoom('<?php echo htmlentities($vo['pic']); ?>')"></td>
+                        <td><?php echo $vo['status']==1 ? '已审核' : '未审核'; ?></td>
+                        <td>
+                            <?php if($vo['status']==0): ?>
+                            <a href="javascript:;" class="layui-btn" onclick="review(<?php echo htmlentities($vo['id']); ?>)">审核</a>
+                            <?php endif; ?>
+                        </td>
                     </tr>
                     <?php endforeach; endif; else: echo "" ;endif; ?>
                     </tbody>
@@ -97,6 +106,41 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    /*
+     * 入金审核
+     */
+    function review(id)
+    {
+        layer.open({
+            type: 2,
+            title: '入金审核',
+            content: '/admin.php/deposit/review/id/'+id+'.html',
+            area: ['500px', '350px'],
+            shade: 0,
+            success: function(layero, index){
+                console.log(layero, index);
+            },
+            end: function(){
+                location.reload();
+            }
+        });
+    }
+
+    function zoom(img)
+    {
+        layer.open({
+            type: 1,
+            title: '转账截图',
+            content: '<div style="padding: 20px 10px;"><img src="'+ img +'"></div>',
+            shade: true,
+            yes: function(){
+              layer.closeAll();
+            }
+        });
+    }
+
+</script>
 
 </div>
 

@@ -4,7 +4,8 @@
     <!--tab标签-->
     <div class="layui-tab layui-tab-brief">
         <ul class="layui-tab-title">
-            <li class="layui-this">入金银行卡管理</li>
+            <li class=""><a href="{:url('admin/index/index')}">返回</a></li>
+            <li class="layui-this">入金记录 - [{$bank.bank_name}] - {$bank.bank_card}</li>
         </ul>
         <div class="layui-tab-content">
 
@@ -13,24 +14,32 @@
                     <thead>
                     <tr>
                         <th>ID</th>
-                        <th>银行</th>
-                        <th>卡号</th>
-                        <th>姓名</th>
-                        <th>限额</th>
+                        <th>用户ID</th>
+                        <th>金额</th>
+                        <th>第三方单号</th>
+                        <th>平台单号</th>
+                        <th>提交时间</th>
+                        <th>转账截图</th>
                         <th>状态</th>
-                        <th>交易明细</th>
+                        <th>操作</th>
                     </tr>
                     </thead>
                     <tbody>
-                    {foreach name="dataList" item="vo"}
+                    {foreach name="dataList" item="vo" key="key"}
                     <tr>
-                        <td>{$vo.id}</td>
-                        <td>{$vo.bank_name}</td>
-                        <td>{$vo.bank_card}</td>
-                        <td>{$vo.name}</td>
-                        <td>{$vo.quota}</td>
-                        <td>{php}echo $vo['status']==1 ? '启用' : '停用';{/php}</td>
-                        <td><a href="/admin.php/deposit">查看</a></td>
+                        <td>{$key+1}</td>
+                        <td>{$vo.uid}</td>
+                        <td>{$vo.amount}</td>
+                        <td>{$vo.sn}</td>
+                        <td>{$vo.platform_sn}</td>
+                        <td>{$vo.create_time|date="Y-m-d H:i:s"}</td>
+                        <td><img src="{$vo.pic}" style="cursor:pointer;" onclick="zoom('{$vo.pic}')"></td>
+                        <td>{php}echo $vo['status']==1 ? '已审核' : '未审核';{/php}</td>
+                        <td>
+                            {if condition="$vo['status']==0"}
+                            <a href="javascript:;" class="layui-btn" onclick="review({$vo.id})">审核</a>
+                            {/if}
+                        </td>
                     </tr>
                     {/foreach}
                     </tbody>
@@ -39,4 +48,39 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    /*
+     * 入金审核
+     */
+    function review(id)
+    {
+        layer.open({
+            type: 2,
+            title: '入金审核',
+            content: '/admin.php/deposit/review/id/'+id+'.html',
+            area: ['500px', '350px'],
+            shade: 0,
+            success: function(layero, index){
+                console.log(layero, index);
+            },
+            end: function(){
+                location.reload();
+            }
+        });
+    }
+
+    function zoom(img)
+    {
+        layer.open({
+            type: 1,
+            title: '转账截图',
+            content: '<div style="padding: 20px 10px;"><img src="'+ img +'"></div>',
+            shade: true,
+            yes: function(){
+              layer.closeAll();
+            }
+        });
+    }
+
+</script>
 {/block}
