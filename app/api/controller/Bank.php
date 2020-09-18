@@ -30,10 +30,9 @@ class Bank extends Controller
     public function apply()
     {
         if ($this->request->isPost()) {
-            $post = $this->request->param();
+            $post = $this->request->param('data');
             // 平台订单号
             $platform_sn = date('YmdHis').mt_rand(10000,99999);
-
             // 获取一张可用银行卡
             $bank = Db::name('bank_card')->where(['status'=>1])->find();
             if($bank['id']){
@@ -52,7 +51,7 @@ class Bank extends Controller
 
                 // 保存订单数据
                 if(Db::name('deposit')->insertGetId($data)){
-                    $result = [
+                    $result['data'] = [
                         'create_time' => time(),
                         'uid'         => $post['uid'],
                         'username'    => $post['username'],
@@ -67,7 +66,7 @@ class Bank extends Controller
                     ];
                     echo json_encode($result); exit;
                 } else {
-                    $result = [
+                    $result['data'] = [
                         'status' => 400,
                         'msg'    => '订单数据保存失败',
                         'data'   => ''
@@ -75,7 +74,7 @@ class Bank extends Controller
                     echo json_encode($result); exit;
                 }
             }else{
-                $result = [
+                $result['data'] = [
                     'status' => 400,
                     'msg'    => '暂无可用银行卡',
                     'data'   => ''
@@ -96,14 +95,14 @@ class Bank extends Controller
             if(Db::name('deposit')->where(['platform_sn'=>$platform_sn])->find()){
                 // 保存转账截图
                 if (Db::name('deposit')->where(['platform_sn'=>$platform_sn])->update(['pic'=>$pic])) {
-                    $result = [
+                    $result['data'] = [
                         'status' => 200,
                         'msg'    => '已更新图片链接',
                         'data'   => ''
                     ];
                     echo json_encode($result); exit;
                 } else {
-                    $result = [
+                    $result['data'] = [
                         'status' => 400,
                         'msg'    => '图片链接更新失败',
                         'data'   => ''
@@ -111,10 +110,13 @@ class Bank extends Controller
                     echo json_encode($result); exit;
                 }
             }else{
-
+                $result['data'] = [
+                    'status' => 400,
+                    'msg'    => '查询不到订单',
+                    'data'   => ''
+                ];
+                echo json_encode($result); exit;
             }
-
-
         }
     }
 
