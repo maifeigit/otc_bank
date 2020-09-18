@@ -1,4 +1,4 @@
-<?php /*a:2:{s:33:"./themes/admin/deposit\index.html";i:1600430558;s:24:"./themes/admin/base.html";i:1599447919;}*/ ?>
+<?php /*a:2:{s:33:"./themes/admin/deposit\index.html";i:1600432057;s:24:"./themes/admin/base.html";i:1599447919;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -92,7 +92,15 @@
                         <td><?php echo htmlentities($vo['platform_sn']); ?></td>
                         <td><?php echo htmlentities(date("Y-m-d H:i:s",!is_numeric($vo['create_time'])? strtotime($vo['create_time']) : $vo['create_time'])); ?></td>
                         <td><img src="<?php echo htmlentities($vo['pic']); ?>" style="cursor:pointer;" onclick="zoom('<?php echo htmlentities($vo['pic']); ?>')"></td>
-                        <td><?php echo $vo['status']==1 ? '已审核' : '未审核'; ?></td>
+                        <td>
+                            <?php if($vo['status']==0): ?>
+                                未审核
+                            <?php elseif($vo['status']==1): ?>
+                                已审核
+                            <?php elseif($vo['status']==2): ?>
+                                审核不通过
+                            <?php endif; ?>
+                        </td>
                         <td>
                             <?php if($vo['status']==0): ?>
                             <a href="javascript:;" class="layui-btn" onclick="review(<?php echo htmlentities($vo['id']); ?>)">审核</a>
@@ -117,7 +125,7 @@
             title: '入金审核',
             content: '/admin.php/deposit/review/id/'+id+'.html',
             area: ['500px', '350px'],
-            shade: 0,
+            shade: false,
             success: function(layero, index){
                 console.log(layero, index);
             },

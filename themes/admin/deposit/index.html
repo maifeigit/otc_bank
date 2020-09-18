@@ -34,7 +34,15 @@
                         <td>{$vo.platform_sn}</td>
                         <td>{$vo.create_time|date="Y-m-d H:i:s"}</td>
                         <td><img src="{$vo.pic}" style="cursor:pointer;" onclick="zoom('{$vo.pic}')"></td>
-                        <td>{php}echo $vo['status']==1 ? '已审核' : '未审核';{/php}</td>
+                        <td>
+                            {if condition="$vo['status']==0"}
+                                未审核
+                            {elseif condition="$vo['status']==1" /}
+                                已审核
+                            {elseif condition="$vo['status']==2" /}
+                                审核不通过
+                            {/if}
+                        </td>
                         <td>
                             {if condition="$vo['status']==0"}
                             <a href="javascript:;" class="layui-btn" onclick="review({$vo.id})">审核</a>
@@ -59,7 +67,7 @@
             title: '入金审核',
             content: '/admin.php/deposit/review/id/'+id+'.html',
             area: ['500px', '350px'],
-            shade: 0,
+            shade: false,
             success: function(layero, index){
                 console.log(layero, index);
             },

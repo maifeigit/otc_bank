@@ -68,7 +68,7 @@ class Bank extends Controller
                     echo json_encode($result); exit;
                 } else {
                     $result = [
-                        'status' => 404,
+                        'status' => 400,
                         'msg'    => '订单数据保存失败',
                         'data'   => ''
                     ];
@@ -76,7 +76,7 @@ class Bank extends Controller
                 }
             }else{
                 $result = [
-                    'status' => 404,
+                    'status' => 400,
                     'msg'    => '暂无可用银行卡',
                     'data'   => ''
                 ];
@@ -104,7 +104,7 @@ class Bank extends Controller
                     echo json_encode($result); exit;
                 } else {
                     $result = [
-                        'status' => 404,
+                        'status' => 400,
                         'msg'    => '图片链接更新失败',
                         'data'   => ''
                     ];

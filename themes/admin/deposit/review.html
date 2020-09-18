@@ -11,7 +11,7 @@
 <body>
 
 
-<form class="layui-form" method="post" action="">
+<form class="layui-form" method="post" action="{:url('admin/deposit/submit')}">
 
 
     <div class="layui-form-item">
@@ -32,7 +32,7 @@
     <div class="layui-form-item">
         <label class="layui-form-label">审核结果</label>
         <div class="layui-input-block">
-            <select name="bank_id" lay-verify="required" id="bankList" lay-filter="bankList">
+            <select name="status" lay-verify="required">
                 <option value="">请选择</option>
                 <option value="1">审核通过</option>
                 <option value="2">审核不通过</option>
@@ -70,8 +70,8 @@ $(function(){
             type: data.form.method,
             data: $(data.form).serialize(),
             success: function (res) {
-                layer.msg(res.errMsg);
-                if (res.errCode == 0) {
+                layer.msg(res.msg);
+                if (res.code == 1) {
                     setTimeout(function () {
                         parent.layer.closeAll();
                     }, 2000);
