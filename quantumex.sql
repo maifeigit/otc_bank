@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2020-09-18 12:27:12
+Date: 2020-09-18 13:51:06
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -152,6 +152,7 @@ INSERT INTO `max_bank_card` VALUES ('12', '招商银行', '6222152122', null, '�
 DROP TABLE IF EXISTS `max_deposit`;
 CREATE TABLE `max_deposit` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID',
+  `bank_id` int(4) DEFAULT NULL,
   `uid` int(10) NOT NULL COMMENT '用户ID',
   `username` varchar(30) NOT NULL COMMENT '用户名',
   `amount` decimal(15,4) DEFAULT '0.0000' COMMENT '交易金额',

@@ -1,4 +1,4 @@
-<?php /*a:2:{s:29:"./themes/admin/index\add.html";i:1600400021;s:24:"./themes/admin/base.html";i:1599447919;}*/ ?>
+<?php /*a:2:{s:29:"./themes/admin/index\add.html";i:1600401006;s:24:"./themes/admin/base.html";i:1599447919;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -75,6 +75,12 @@
                         </div>
                     </div>
                     <div class="layui-form-item">
+                        <label class="layui-form-label">支行</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="branch" value="" lay-verify="required" placeholder="请输入支行信息" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
                         <label class="layui-form-label">卡号</label>
                         <div class="layui-input-block">
                             <input type="text" name="bank_card" value="" lay-verify="required" placeholder="请输入银行卡号" class="layui-input">
@@ -89,7 +95,7 @@
                     <div class="layui-form-item">
                         <label class="layui-form-label">额度</label>
                         <div class="layui-input-block">
-                            <input type="text" name="quota" value="" placeholder="(可选)请输入卡累计交易额度（万）" class="layui-input">
+                            <input type="text" name="quota" value="" placeholder="(可选)请输入卡累计交易额度" class="layui-input">
                         </div>
                     </div>
 
@@ -103,7 +109,7 @@
 
                     <div class="layui-form-item">
                         <div class="layui-input-block">
-                            <button class="layui-btn" lay-submit lay-filter="*">更新</button>
+                            <button class="layui-btn" lay-submit lay-filter="*">提交</button>
                             <button type="reset" class="layui-btn layui-btn-primary">重置</button>
                         </div>
                     </div>

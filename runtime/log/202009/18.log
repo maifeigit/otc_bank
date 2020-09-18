@@ -3516,3 +3516,367 @@
 [ info ] [ CACHE ] INIT File
 [ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.010897s ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-18T12:33:45+08:00 ] 127.0.0.1 GET /admin.php/index/index.html
+[ info ] www.qua.com/admin.php/index/index.html [运行时间：0.079962s][吞吐率：12.51req/s] [内存消耗：1,949.79kb] [文件加载：92]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=lhuomd83eu2dvak8u0vstiils1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.qua.com/admin.php/index/edit/id/1.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.009528s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/admin/index\index.html [ array (
+  0 => 'menu',
+  1 => 'controller',
+  2 => 'root',
+  3 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002502s ] mysql:host=127.0.0.1;port=3306;dbname=quantumex;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_auth_rule` [ RunTime:0.006999s ]
+[ sql ] [ SQL ] SELECT * FROM `max_auth_rule` WHERE  `status` = 1 ORDER BY `sort`  DESC,`id`  ASC [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_auth_group_access` [ RunTime:0.006219s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `max_auth_group_access` `AuthGroupAccess` LEFT JOIN `max_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='1' ) [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_bank_card` [ RunTime:0.006553s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `max_bank_card` LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `max_bank_card` LIMIT 0,10 [ RunTime:0.000264s ]
+---------------------------------------------------------------
+[ 2020-09-18T12:33:46+08:00 ] 127.0.0.1 GET /public/static/common/images/admin_logo.png
+[ info ] www.qua.com/public/static/common/images/admin_logo.png [运行时间：0.041223s][吞吐率：24.26req/s] [内存消耗：886.88kb] [文件加载：73]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=lhuomd83eu2dvak8u0vstiils1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.qua.com/admin.php/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.011348s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-18T12:33:47+08:00 ] 127.0.0.1 GET /admin.php/index/add.html
+[ info ] www.qua.com/admin.php/index/add.html [运行时间：0.070191s][吞吐率：14.25req/s] [内存消耗：2,018.84kb] [文件加载：91]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=lhuomd83eu2dvak8u0vstiils1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.qua.com/admin.php/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.007831s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/admin/index\add.html [ array (
+  0 => 'menu',
+  1 => 'controller',
+  2 => 'root',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002835s ] mysql:host=127.0.0.1;port=3306;dbname=quantumex;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_auth_group_access` [ RunTime:0.006566s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `max_auth_group_access` `AuthGroupAccess` LEFT JOIN `max_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='1' ) [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_auth_rule` [ RunTime:0.006728s ]
+[ sql ] [ SQL ] SELECT * FROM `max_auth_rule` WHERE  `status` = 1 ORDER BY `sort`  DESC,`id`  ASC [ RunTime:0.000422s ]
+---------------------------------------------------------------
+[ 2020-09-18T12:33:47+08:00 ] 127.0.0.1 GET /public/static/common/images/admin_logo.png
+[ info ] www.qua.com/public/static/common/images/admin_logo.png [运行时间：0.049539s][吞吐率：20.19req/s] [内存消耗：886.88kb] [文件加载：73]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=lhuomd83eu2dvak8u0vstiils1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.qua.com/admin.php/index/add.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.012159s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-18T12:33:48+08:00 ] 127.0.0.1 GET /admin.php/index/index.html
+[ info ] www.qua.com/admin.php/index/index.html [运行时间：0.079907s][吞吐率：12.51req/s] [内存消耗：1,949.59kb] [文件加载：92]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=lhuomd83eu2dvak8u0vstiils1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.qua.com/admin.php/index/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.009741s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/admin/index\index.html [ array (
+  0 => 'menu',
+  1 => 'controller',
+  2 => 'root',
+  3 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001983s ] mysql:host=127.0.0.1;port=3306;dbname=quantumex;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_auth_rule` [ RunTime:0.006526s ]
+[ sql ] [ SQL ] SELECT * FROM `max_auth_rule` WHERE  `status` = 1 ORDER BY `sort`  DESC,`id`  ASC [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_auth_group_access` [ RunTime:0.007677s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `max_auth_group_access` `AuthGroupAccess` LEFT JOIN `max_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='1' ) [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_bank_card` [ RunTime:0.006419s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `max_bank_card` LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `max_bank_card` LIMIT 0,10 [ RunTime:0.000551s ]
+---------------------------------------------------------------
+[ 2020-09-18T12:33:48+08:00 ] 127.0.0.1 GET /public/static/common/images/admin_logo.png
+[ info ] www.qua.com/public/static/common/images/admin_logo.png [运行时间：0.043701s][吞吐率：22.88req/s] [内存消耗：886.88kb] [文件加载：73]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=lhuomd83eu2dvak8u0vstiils1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.qua.com/admin.php/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.010654s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-18T13:27:05+08:00 ] 127.0.0.1 GET /admin.php/index/index.html
+[ info ] www.qua.com/admin.php/index/index.html [运行时间：0.088017s][吞吐率：11.36req/s] [内存消耗：1,949.77kb] [文件加载：92]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=lhuomd83eu2dvak8u0vstiils1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.qua.com/admin.php/index/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.010217s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/admin/index\index.html [ array (
+  0 => 'menu',
+  1 => 'controller',
+  2 => 'root',
+  3 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003298s ] mysql:host=127.0.0.1;port=3306;dbname=quantumex;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_auth_rule` [ RunTime:0.007926s ]
+[ sql ] [ SQL ] SELECT * FROM `max_auth_rule` WHERE  `status` = 1 ORDER BY `sort`  DESC,`id`  ASC [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_auth_group_access` [ RunTime:0.008450s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `max_auth_group_access` `AuthGroupAccess` LEFT JOIN `max_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='1' ) [ RunTime:0.001170s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_bank_card` [ RunTime:0.006775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `max_bank_card` LIMIT 1 [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `max_bank_card` LIMIT 0,10 [ RunTime:0.000284s ]
+---------------------------------------------------------------
+[ 2020-09-18T13:27:05+08:00 ] 127.0.0.1 GET /public/static/common/images/admin_logo.png
+[ info ] www.qua.com/public/static/common/images/admin_logo.png [运行时间：0.043844s][吞吐率：22.81req/s] [内存消耗：886.88kb] [文件加载：73]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=lhuomd83eu2dvak8u0vstiils1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.qua.com/admin.php/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.010465s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2020-09-18T13:36:25+08:00 ] 127.0.0.1 GET /admin.php/index/index.html
+[ info ] www.qua.com/admin.php/index/index.html [运行时间：0.110945s][吞吐率：9.01req/s] [内存消耗：1,949.77kb] [文件加载：92]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'admin'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=lhuomd83eu2dvak8u0vstiils1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.qua.com/admin.php/index/add.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.024643s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ./themes/admin/index\index.html [ array (
+  0 => 'menu',
+  1 => 'controller',
+  2 => 'root',
+  3 => 'dataList',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002612s ] mysql:host=127.0.0.1;port=3306;dbname=quantumex;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_auth_rule` [ RunTime:0.007220s ]
+[ sql ] [ SQL ] SELECT * FROM `max_auth_rule` WHERE  `status` = 1 ORDER BY `sort`  DESC,`id`  ASC [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_auth_group_access` [ RunTime:0.007200s ]
+[ sql ] [ SQL ] SELECT `AuthGroupAccess`.`uid`,`AuthGroupAccess`.`group_id`,`AuthGroup`.`title`,`AuthGroup`.`rules` FROM `max_auth_group_access` `AuthGroupAccess` LEFT JOIN `max_auth_group` `AuthGroup` ON `AuthGroupAccess`.`group_id`=`AuthGroup`.`id` WHERE  (  AuthGroupAccess.uid='1' and AuthGroup.status='1' ) [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `max_bank_card` [ RunTime:0.006521s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `max_bank_card` LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `max_bank_card` LIMIT 0,10 [ RunTime:0.000233s ]
+---------------------------------------------------------------
+[ 2020-09-18T13:36:25+08:00 ] 127.0.0.1 GET /public/static/common/images/admin_logo.png
+[ info ] www.qua.com/public/static/common/images/admin_logo.png [运行时间：0.050575s][吞吐率：19.77req/s] [内存消耗：886.88kb] [文件加载：73]
+[ info ] [ LANG ] D:\www\quantumex\thinkphp/lang/zh-cn.php
+[ info ] [ BIND ] 'index'
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=lhuomd83eu2dvak8u0vstiils1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.qua.com/admin.php/index/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => 'www.qua.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Base->run @app_begin [ RunTime:0.012170s ]
+[ info ] [ LOG ] INIT File
