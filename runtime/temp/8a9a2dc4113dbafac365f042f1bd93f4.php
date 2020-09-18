@@ -1,4 +1,4 @@
-<?php /*a:2:{s:30:"./themes/admin/index\edit.html";i:1600400091;s:24:"./themes/admin/base.html";i:1599447919;}*/ ?>
+<?php /*a:2:{s:30:"./themes/admin/index\edit.html";i:1600401020;s:24:"./themes/admin/base.html";i:1599447919;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -72,6 +72,12 @@
                         <label class="layui-form-label">银行</label>
                         <div class="layui-input-block">
                             <input type="text" name="bank_name" value="<?php echo htmlentities($bank['bank_name']); ?>" lay-verify="required" placeholder="请输入银行名称" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">支行</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="branch" value="<?php echo htmlentities($bank['branch']); ?>" lay-verify="required" placeholder="请输入支行信息" class="layui-input">
                         </div>
                     </div>
                     <div class="layui-form-item">

@@ -1,4 +1,4 @@
-<?php /*a:2:{s:31:"./themes/admin/index\index.html";i:1600400311;s:24:"./themes/admin/base.html";i:1599447919;}*/ ?>
+<?php /*a:2:{s:31:"./themes/admin/index\index.html";i:1600401029;s:24:"./themes/admin/base.html";i:1599447919;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -73,6 +73,7 @@
                     <tr>
                         <th>ID</th>
                         <th>银行</th>
+                        <th>支行</th>
                         <th>卡号</th>
                         <th>姓名</th>
                         <th>限额</th>
@@ -85,6 +86,7 @@
                     <tr>
                         <td><?php echo htmlentities($key+1); ?></td>
                         <td><?php echo htmlentities($vo['bank_name']); ?></td>
+                        <td><?php echo htmlentities($vo['branch']); ?></td>
                         <td><?php echo htmlentities($vo['bank_card']); ?></td>
                         <td><?php echo htmlentities($vo['name']); ?></td>
                         <td><?php echo htmlentities($vo['quota']); ?></td>

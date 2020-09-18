@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2020-09-18 11:46:24
+Date: 2020-09-18 11:52:06
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -130,10 +130,11 @@ INSERT INTO `max_auth_rule` VALUES ('86', 'admin/Article/delete', '删除文章'
 DROP TABLE IF EXISTS `max_bank_card`;
 CREATE TABLE `max_bank_card` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'ID',
-  `bank_name` varchar(256) NOT NULL DEFAULT '' COMMENT '收款钱包地址',
-  `bank_card` varchar(10) NOT NULL DEFAULT 'USDT' COMMENT '交易币种',
+  `bank_name` varchar(256) NOT NULL DEFAULT '' COMMENT '银行名称',
+  `bank_card` varchar(64) NOT NULL COMMENT '银行卡号',
+  `branch` varchar(20) DEFAULT NULL COMMENT '支行信息',
   `name` varchar(10) NOT NULL COMMENT '用户姓名',
-  `quota` decimal(15,2) DEFAULT NULL COMMENT 'mt4交易账号',
+  `quota` decimal(15,2) DEFAULT NULL COMMENT '交易额度',
   `create_time` int(10) DEFAULT NULL COMMENT '提交时间',
   `status` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`)
@@ -142,12 +143,8 @@ CREATE TABLE `max_bank_card` (
 -- ----------------------------
 -- Records of max_bank_card
 -- ----------------------------
-INSERT INTO `max_bank_card` VALUES ('1', '工商银行', '6220236214', '陈明', '500000.00', '1599410518', '1');
-INSERT INTO `max_bank_card` VALUES ('2', '建设银行', '6112413666', '郭炳雄', '500000.00', '1599411054', '0');
-INSERT INTO `max_bank_card` VALUES ('3', '农业银行', '6325211100', '李彩福', '500000.00', '1599411096', '0');
-INSERT INTO `max_bank_card` VALUES ('4', '招商银行', '6222020659', '詹天明', '500000.00', '1599411118', '0');
-INSERT INTO `max_bank_card` VALUES ('5', '广大银行', '6222023258', '吴天明', '500000.00', '1599411141', '0');
-INSERT INTO `max_bank_card` VALUES ('12', '招商银行', '6222152122', '上海化工股份有限公司', '500000.00', '1600400027', '0');
+INSERT INTO `max_bank_card` VALUES ('1', '工商银行', '6220236214', '安华支行', '陈明', '500000.00', '1599410518', '1');
+INSERT INTO `max_bank_card` VALUES ('12', '招商银行', '6222152122', null, '上海化工股份有限公司', '500000.00', '1600400027', '0');
 
 -- ----------------------------
 -- Table structure for `max_deposit`

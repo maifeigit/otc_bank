@@ -37,6 +37,7 @@ class Index extends AdminBase
             $data = [
                 'bank_name' => $post['bank_name'],
                 'bank_card' => $post['bank_card'],
+                'branch' 	=> $post['branch'],
                 'name' 		=> $post['name'],
                 'quota'		=> $post['quota'],
                 'status' 	=> $post['status'],
@@ -63,6 +64,7 @@ class Index extends AdminBase
             $data = [
                 'bank_name' => $post['bank_name'],
                 'bank_card' => $post['bank_card'],
+                'branch' 	=> $post['branch'],
                 'name' 		=> $post['name'],
                 'quota'		=> $post['quota'],
                 'status' 	=> $post['status'],
