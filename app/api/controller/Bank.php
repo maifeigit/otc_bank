@@ -37,7 +37,12 @@ class Bank extends Controller
             // 平台订单号
             $platform_sn = date('YmdHis').mt_rand(10000,99999);
             // 获取一张可用银行卡
-            $bank = Db::name('bank_card')->where(['status'=>1])->find();
+            // $bank = Db::name('bank_card')->where(['status'=>1])->find();
+            // 查询可用银行卡，随机获取一张
+            $bankList = Db::name('bank_card')->where(['status'=>1])->select();
+            $index = mt_rand(0,count($bankList)-1);
+            $bank  = $bankList[$index];
+            
             if($bank['id']){
                 // 订单数据
                 $data = [
